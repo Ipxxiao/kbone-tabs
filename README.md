@@ -52,4 +52,3 @@ const { Tabs, TabHead, TabBody, TabItem, TabPanel } = require('kbone-tabs')
 ## More
 - [MIT License](https://github.com/Ipxxiao/kbone-tabs/blob/master/LICENSE)
 - [Changelog](https://github.com/Ipxxiao/kbone-tabs/blob/master/CHANGELOG.md)
-- [Test Case](https://github.com/Ipxxiao/kbone-tabs/blob/master/__tests__/index.spec.ts)
