@@ -1,43 +1,19 @@
 {
-    "name": "accurate",
-    "version": "1.5.5",
-    "description": "An precision calculation for JavaScript and Node.js. supports numbers, decimals, strings, arrays, matrices and expression. 解决 JavaScript 与 Node.js 精度计算（小数、浮点数计算精度）问题。支持数字、小数、字符串、数组、矩阵和表达式。",
+    "name": "kbone-tabs",
+    "version": "1.0.0",
+    "description": "An easy tab component for Kbone",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Ipxxiao/accurate.git"
+        "url": "git+https://github.com/Ipxxiao/kbone-tabs.git"
     },
     "keywords": [
-        "accurate",
-        "accuracy",
-        "precision",
-        "arithmetic",
-        "calculation",
-        "floating-point",
-        "decimal",
-        "expression",
-        "add",
-        "addition",
-        "subtract",
-        "subtraction",
-        "mul",
-        "multiply",
-        "multiplication",
-        "division",
-        "divide",
-        "modulo",
-        "modulus",
-        "expr",
-        "精度计算",
-        "表达式精度计算",
-        "js 精度计算",
-        "js 小数计算",
-        "js 浮点数计算"
+        "kbone-tabs"
     ],
-    "homepage": "https://ipxxiao.github.io/accurate",
+    "homepage": "https://ipxxiao.github.io/kbone-tabs",
     "author": "Jonas Hsiao <jonashsiao@icloud.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Ipxxiao/accurate/issues"
+        "url": "https://github.com/Ipxxiao/kbone-tabs/issues"
     },
     "private": false,
     "main": "./libs/cjs",
@@ -71,7 +47,7 @@
     "zax": {
         "innerModule": false,
         "needBuild": true,
-        "test": true,
+        "test": false,
         "docs": true,
         "cleanDirs": [
             "libs/**"
@@ -86,8 +62,10 @@
         "@babel/plugin-transform-runtime": "^7.1.0",
         "@babel/preset-env": "^7.6.3",
         "@babel/preset-typescript": "^7.6.0",
+        "@types/classnames": "^2.2.11",
         "@types/jest": "^24.0.18",
         "@types/node": "^12.7.12",
+        "@types/react": "^17.0.0",
         "chalk": "^2.4.2",
         "done-rainbow": "^0.1.2",
         "eslint": "^7.4.0",
@@ -97,19 +75,21 @@
         "jsdoc-babel": "^0.5.0",
         "jsdoc-to-markdown": "^5.0.2",
         "npm-run-all": "^4.1.5",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
         "rimraf": "^3.0.0",
         "ts-jest": "^24.1.0",
         "tslib": "^1.10.0",
         "typescript": "^3.6.4"
     },
     "dependencies": {
-        "accurate-core": "^1.0.2"
+        "classnames": "^2.2.6",
+        "tiny-slider": "^2.9.2"
     },
     "jest": {
         "transform": {
             ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
         },
-        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
         "moduleFileExtensions": [
             "ts",
             "tsx",

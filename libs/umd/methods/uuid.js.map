@@ -1,0 +1,1 @@
+{"version":3,"file":"uuid.js","sourceRoot":"","sources":["../../../src/methods/uuid.ts"],"names":[],"mappings":";;;;;;;;;;;;IAAA,sCAAsC;IACtC,IAAI,KAAK,GAAG,CAAC,CAAC;IAEd,SAAwB,IAAI;QAC1B,OAAO,gBAAc,KAAK,EAAI,CAAC;IACjC,CAAC;IAFD,uBAEC;IAED,SAAgB,KAAK;QACnB,KAAK,GAAG,CAAC,CAAC;IACZ,CAAC;IAFD,sBAEC"}

@@ -1,0 +1,16 @@
+.md-tabs {
+    color: #fff;
+    .md-tabs-item {
+        padding: 10px 20px;
+
+        &.on {
+            font-weight: bold;
+            font-size: 28px;
+        }
+    }
+    .md-tabs-panel {
+        border-radius: 20px;
+        background: #999;
+        min-height: 50px;
+    }
+}

@@ -1,7 +1,6 @@
-# Accurate &middot; [![NPM version](https://img.shields.io/npm/v/accurate.svg?style=flat)](https://www.npmjs.com/package/accurate) [![NPM downloads](https://img.shields.io/npm/dm/accurate.svg?style=flat)](https://www.npmjs.com/package/accurate) [![Build Status](https://travis-ci.org/Ipxxiao/accurate.svg?branch=master)](https://travis-ci.org/Ipxxiao/accurate) [![Coverage Status](https://coveralls.io/repos/github/Ipxxiao/accurate/badge.svg?branch=master)](https://coveralls.io/github/Ipxxiao/accurate?branch=master) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+# Kbone-tabs &middot; [![NPM version](https://img.shields.io/npm/v/kbone-tabs.svg?style=flat)](https://www.npmjs.com/package/kbone-tabs) [![NPM downloads](https://img.shields.io/npm/dm/kbone-tabs.svg?style=flat)](https://www.npmjs.com/package/kbone-tabs) [![Build Status](https://travis-ci.org/Ipxxiao/kbone-tabs.svg?branch=master)](https://travis-ci.org/Ipxxiao/kbone-tabs) [![Coverage Status](https://coveralls.io/repos/github/Ipxxiao/kbone-tabs/badge.svg?branch=master)](https://coveralls.io/github/Ipxxiao/kbone-tabs?branch=master) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-- Accurate is an precision calculation for JavaScript and Nodejs. supports numbers, decimals, strings, arrays, matrices and expression.
-- 解决 JavaScript 与 Node.js 精度计算（浮点数计算精度）问题。支持数字、小数、字符串、数组、矩阵和表达式。
+- Kbone-tabs is an easy tab component for Kbone.
 
 ## Browsers support
 
@@ -12,121 +11,45 @@
 ## Install
 
 ``` base
-npm i accurate -S
+npm i kbone-tabs -S
 or
-yarn add accurate
+yarn add kbone-tabs
 ```
-
-## Features
-
-- Supports numbers, decimals, strings, arrays and matrices.
-- Contains arithmetic expression parser.
-- Runs on any JavaScript engine.
-- Is easily extensible.
-- Open source.
-
-- 支持数字、小数、字符串、数组和矩阵。
-- 包含算术表达式解析器。
-- 运行在任何 JavaScript 引擎。
-- 易于扩展。
-- 开源的。
 
 ## Usage
 
 ``` javascript 
-import accurate, {
-  add, addition, subtract, subtraction, multiply, mul, multiplication, division, divide, modulo, modulus, expr
-} from 'accurate'
+import { Tabs, TabHead, TabBody, TabItem, TabPanel } from 'kbone-tabs'
 or
-const accurate, {
-  add, addition, subtract, subtraction, multiply, mul, multiplication, division, divide, modulo, modulus, expr
-} = require('accurate')
+const { Tabs, TabHead, TabBody, TabItem, TabPanel } = require('kbone-tabs')
+
+<Tabs>
+    <TabHead>
+        {
+            [0, 1, 2, 3].map((item, index) => {
+                return (
+                    <TabItem key={index}>
+                        tab{item}
+                    </TabItem>
+                )
+            })
+        }
+    </TabHead>
+    <TabBody>
+        {
+            [0, 1, 2, 3].map((item, index) => {
+                return (
+                    <TabPanel key={index}>
+                        panel{item}
+                    </TabPanel>
+                )
+            })
+        }
+    </TabBody>
+</Tabs>
 ```
-
-
-. **add（加法）**
-``` javascript
->
-1.1 + 0.3 + 0.1
-accurate.add(1.1, 0.3, 0.1)
-addition(1.1, 0.3, 0.1)
-
-<-
-1.5000000000000002
-1.5
-1.5
-```
-
-. **subtract（减法）**
-``` javascript
->
-1.1 - 0.2 - 0.1
-accurate.subtract([1.1, 0.2, 0.1])
-subtraction([1.1, 0.2, 0.1])
-
-<-
-0.8000000000000002
-0.8
-0.8
-```
-
-. **multiply（乘法）**
-``` javascript
->
-1.1 * 0.1 * 0.2
-accurate.multiply([1.1, [0.1, 0.2]])
-accurate.mul([1.1, [0.1, 0.2]])
-multiplication([1.1, [0.1, 0.2]])
-
-<-
-0.022000000000000006
-0.022
-0.022
-0.022
-```
-
-. **division（除法）**
-``` javascript
->
-1.1 / 10 / 2
-accurate.division([1.1, 10], 2)
-accurate.divide([1.1, 10], 2)
-
-<-
-0.05500000000000001
-0.055
-0.055
-```
-
-. **modulo（取模）**
-``` javascript
->
-1.1 % 1
-accurate.modulo(1.1, 1)
-accurate.modulus(1.1, 1)
-
-<-
-0.10000000000000009
-0.1
-0.1
-```
-
-. **expr（表达式）**
-``` javascript
->
-((1.1+0.3)*4+2*3)/(1.1%0.3-1*0.1)-1*5
-accurate.expr('((1.1+0.3)*4+2*3)/(1.1%0.3-1*0.1)-1*5')
-accurate.expr('((1.1 + 0.3) * 4 + 2 * 3) / (1.1 % 0.3 - 1 * 0.1) - 1 * 5')
-
-<-
-110.99999999999987
-111
-111
-```
-
 
 ## More
-- [MIT License](https://github.com/Ipxxiao/accurate/blob/master/LICENSE)
-- [Changelog](https://github.com/Ipxxiao/accurate/blob/master/CHANGELOG.md)
-- [Test Case](https://github.com/Ipxxiao/accurate/blob/master/__tests__/index.spec.ts)
-- [Docs](https://github.com/Ipxxiao/accurate/tree/master/docs)
+- [MIT License](https://github.com/Ipxxiao/kbone-tabs/blob/master/LICENSE)
+- [Changelog](https://github.com/Ipxxiao/kbone-tabs/blob/master/CHANGELOG.md)
+- [Test Case](https://github.com/Ipxxiao/kbone-tabs/blob/master/__tests__/index.spec.ts)
