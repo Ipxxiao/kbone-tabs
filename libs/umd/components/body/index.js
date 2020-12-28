@@ -34,13 +34,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "react", "./index.scss"], factory);
+        define(["require", "exports", "react"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var react_1 = __importStar(require("react"));
-    require("./index.scss");
     function TabBody(props) {
         var children = props.children, tabIndex = props.tabIndex;
         var className = 'md-tabs-body';

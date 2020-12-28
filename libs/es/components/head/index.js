@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.scss';
 function TabHead(props) {
     const { children } = props;
     let className = 'md-tabs-head';

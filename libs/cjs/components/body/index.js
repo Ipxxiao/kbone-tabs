@@ -31,7 +31,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importStar(require("react"));
-require("./index.scss");
 function TabBody(props) {
     var children = props.children, tabIndex = props.tabIndex;
     var className = 'md-tabs-body';

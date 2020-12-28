@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import './index.scss';
 function TabBody(props) {
     const { children, tabIndex, } = props;
     let className = 'md-tabs-body';

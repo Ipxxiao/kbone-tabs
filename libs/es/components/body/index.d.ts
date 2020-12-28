@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.scss';
 declare type TabBodyProps = {
     children: any;
     /** css class， 传入 className 会被转换成 class */

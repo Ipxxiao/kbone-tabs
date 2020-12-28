@@ -18,13 +18,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "react", "./index.scss"], factory);
+        define(["require", "exports", "react"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var react_1 = __importDefault(require("react"));
-    require("./index.scss");
     function TabHead(props) {
         var children = props.children;
         var className = 'md-tabs-head';

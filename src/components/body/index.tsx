@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import './index.scss'
 
 type TabBodyProps = {
     children: any
