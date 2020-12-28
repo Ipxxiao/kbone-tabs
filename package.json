@@ -47,7 +47,7 @@
     "zax": {
         "innerModule": false,
         "needBuild": true,
-        "test": false,
+        "test": true,
         "docs": true,
         "cleanDirs": [
             "libs/**"
