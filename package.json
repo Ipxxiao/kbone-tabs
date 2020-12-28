@@ -1,6 +1,6 @@
 {
     "name": "kbone-tabs",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "An easy tab component for Kbone",
     "repository": {
         "type": "git",
