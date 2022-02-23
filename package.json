@@ -84,7 +84,7 @@
     },
     "dependencies": {
         "classnames": "^2.2.6",
-        "tiny-slider": "^2.9.2"
+        "tiny-slider": "^2.9.4"
     },
     "jest": {
         "transform": {
